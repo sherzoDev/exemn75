@@ -24,7 +24,7 @@ let renderFnc = function (array, element) {
                 <p><strong>On Pizza:</strong> ${array[i].select}</p>
                 <p><strong>Pizza Size:</strong> ${array[i].size}</p>
                 <p><strong>Add:</strong> ${array[i].add}</p>
-                <h5 class="total">${array[i].count}</h5>
+                <h5 class="total">${array[i].count}$</h5>
             </li>
         `
     }
@@ -44,26 +44,26 @@ $form.addEventListener('submit', (evt) => {
     } = evt.target.elements
 
 
-    let usSelValue =[]
+    let usSelValue = []
     user_select.forEach(element => {
-        if(element.checked){
+        if (element.checked) {
             usSelValue.push(element.value);
         }
     });
 
 
-    
-    let add =[]
+
+    let add = []
     add_val.forEach(element => {
-        if(element.checked){
+        if (element.checked) {
             add.push(element.value);
         }
     });
-    
+
     let count = 0;
 
     $addCheck.forEach(item => {
-        if(item.checked) {
+        if (item.checked) {
             count += 3
         }
     })
@@ -91,7 +91,7 @@ $form.addEventListener('submit', (evt) => {
     console.log(newObj.count);
 
     newArr.push(newObj);
-    
+
     renderFnc(newArr, $list)
 
 })

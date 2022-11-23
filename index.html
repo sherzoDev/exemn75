@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>JavaScript Exem</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="wrapper">
+                    <h1 class="text-center mt-2">Pizza Order</h1>
+                    <form class="form">
+                        <input class="mt-3 form-control mx-auto user-name" type="text" name="user_name" value="Eshmat"
+                            placeholder="Enter your name" required>
+                        <input class="mt-3 form-control mx-auto user-phone" type="tel" name="user_phone"
+                            placeholder="Enter your phone number" value="+998 90 111 11 11" required>
+                        <input class="mt-3 form-control mx-auto user-address" value="Chilonzor, Qatortol" type="text"
+                            name="user_email" placeholder="Enter your address" required>
+                        <h6 class=" mt-3">Daugh Thickness:</h6>
+                        <select name="select_size" class="form-select js-select mt-2"
+                            aria-label="Default select example" required>
+                            <option value="None" selected disabled>None</option>
+                            <option value="Thin">Thin</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Thick">Thick</option>
+                        </select>
+                        <ul class="mt-3">
+                            <h5>Size:</h5>
+                            <li>
+                                <label>
+                                    <input checked class="pizza-size" value="25sm" type="radio" name="pizza_size">
+                                    <span>25sm</span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label>
+                                    <input class="pizza-size" value="30sm" type="radio" name="pizza_size">
+                                    <span>30sm</span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label>
+                                    <input class="pizza-size" value="35sm" type="radio" name="pizza_size">
+                                    <span>35sm</span>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <h5>On Pizza:</h5>
+                                <li>
+                                    <label>
+                                        <input value="Tomato" name="user_select" type="checkbox">
+                                        <span>Tomato</span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input value="Turkey meat" name="user_select" type="checkbox">
+                                        <span>Turkey meat</span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input value="Olive" name="user_select" type="checkbox">
+                                        <span>Olive</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input value="Pickled" name="user_select" type="checkbox">
+                                        <span>Pickled</span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input value="Mushroom" name="user_select" type="checkbox">
+                                        <span>Mushroom</span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input value="Horse meat" name="user_select" type="checkbox">
+                                        <span>Horse meat</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <strong>Add:</strong>
+                            <ul>
+                                <li>
+                                    <label>
+                                        <input class="add-check" name="add_val" type="checkbox" value="Pepper">
+                                        <span>Pepper</span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label>
+                                        <input class="add-check" name="add_val" type="checkbox" value="Sausages">
+                                        <span>Sausages</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-success d-flex justify-content-center align-items-center">Add Card</button>
+                    </form>
+                    <ul class="list">
+                    </ul>
+                    <div style="margin-left: 20px;">
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <script src="./js/main.js"></script>
+</body>
+
+</html>
